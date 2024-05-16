@@ -5,7 +5,10 @@ import Navigation from './Components/Navigation';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Star Wars',
+  title: {
+    default: 'Star Wars',
+    template: '%s - Star Wars',
+  },
 };
 
 export default function RootLayout({ children }) {
